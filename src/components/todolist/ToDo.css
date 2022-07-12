@@ -1,0 +1,79 @@
+/* ToDoList */
+
+.ToDoList {
+  display: inline-block;
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+/* ToDoItemBox */
+
+.ToDoItemBox {
+  width: 500px;
+  min-height: 433px;
+  max-height: 433px;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+
+/* ToDoItem */
+
+.ToDoItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.ToDoItem_checkbox {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.ToDoItem_checkbox svg {
+  font-size: 1.5rem;
+}
+
+.ToDoItem_checkbox .ToDoItem_text {
+  margin-left: 0.5rem;
+  flex: 1;
+}
+
+.ToDoItem_checkbox.checked .ToDoItem_text {
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+
+.ToDoItem_remove {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  cursor: pointer;
+}
+
+.ToDoItem_remove :hover {
+  color: #ff8787;
+}
+
+/* ToDoInsert */
+
+.ToDoInsert {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.ToDoInsert_input {
+  width: 390px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.ToDoInsert_button {
+  width: 72px;
+  margin-left: 2rem;
+  font-size: 18px;
+}
