@@ -1,0 +1,48 @@
+/* Welcome */
+
+.WelcomeContainer {
+  margin-top: 200px;
+}
+
+.SelectSignTypeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: blueviolet;
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* SignUp */
+
+.SignUpContainer {
+  margin-top: 20px;
+}
+
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SignIn */
+
+.SignInContainer {
+  margin-top: 20px;
+}
+
+.SignInForm {
+  display: flex;
+  flex-direction: column;
+}
