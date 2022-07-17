@@ -6,9 +6,15 @@
 
 .SelectSignTypeBox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+h1 {
+  display: inline;
+  cursor: pointer;
 }
 
 h2 {
@@ -16,7 +22,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: blueviolet;
+  color: rgb(230, 54, 54);
 }
 
 button {
@@ -25,24 +31,95 @@ button {
   text-align: center;
 }
 
-/* SignUp */
-
-.SignUpContainer {
-  margin-top: 20px;
+.signbtn1 {
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 550;
+  background-color: white;
+  cursor: pointer;
 }
+
+.signbtn2 {
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 550;
+  color: white;
+  background-color: rgb(230, 54, 54);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* Sign */
+
+input {
+  border: 0;
+}
+
+.SignInputBox {
+  border: 1px solid rgb(141, 137, 137);
+  border-radius: 11px;
+  margin-bottom: 18px;
+  padding: 0.5rem;
+}
+
+.SignInput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.SignInput label {
+  font-size: 14px;
+}
+
+.SignInput input {
+  width: 370px;
+  height: 26px;
+  font-size: 18px;
+  margin-top: 5px;
+  padding-left: 0px;
+}
+
+.SignInput input:focus {
+  outline: none;
+}
+
+.SignSubmitBtn {
+  height: 70px;
+  border-radius: 11px;
+  color: white;
+  font-size: 22px;
+  font-weight: 550;
+  background-color: rgb(230, 54, 54);
+}
+
+.SignQuestion {
+  display: flex;
+  margin-top: 11px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.SignQuestion a {
+  color: inherit;
+  padding-left: 6px;
+}
+
+/* SignUp */
 
 .SignUpForm {
   display: flex;
   flex-direction: column;
+  margin-top: 18px;
 }
 
 /* SignIn */
 
-.SignInContainer {
-  margin-top: 20px;
-}
-
 .SignInForm {
   display: flex;
   flex-direction: column;
+  margin-top: 18px;
 }

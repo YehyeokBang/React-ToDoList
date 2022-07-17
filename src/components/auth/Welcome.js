@@ -46,21 +46,39 @@ const Welcome = () => {
       setSignType(1);
     } else if (name === "signin") {
       setSignType(2);
+    } else {
+      setSignType(0);
     }
   };
   return (
     <div className="WelcomeContainer">
-      <h2>Welcome</h2>
-      <div className="SelectSignTypeBox">
-        <button onClick={onPickSignType} name="signup">
-          Sign Up
-        </button>
-        <button onClick={onPickSignType} name="signin">
-          Sign In
-        </button>
-      </div>
-      {signType === 1 && <SignUp onChange={onChange} onSubmit={onSubmit} />}
-      {signType === 2 && <SignIn onChange={onChange} onSubmit={onSubmit} />}
+      {signType === 0 && (
+        <>
+          <h2>Welcome</h2>
+          <div className="SelectSignTypeBox">
+            <button onClick={onPickSignType} name="signin" className="signbtn1">
+              로그인
+            </button>
+            <button onClick={onPickSignType} name="signup" className="signbtn2">
+              회원가입
+            </button>
+          </div>
+        </>
+      )}
+      {signType === 1 && (
+        <SignUp
+          onChange={onChange}
+          onSubmit={onSubmit}
+          onPickSignType={onPickSignType}
+        />
+      )}
+      {signType === 2 && (
+        <SignIn
+          onChange={onChange}
+          onSubmit={onSubmit}
+          onPickSignType={onPickSignType}
+        />
+      )}
       {error}
     </div>
   );
