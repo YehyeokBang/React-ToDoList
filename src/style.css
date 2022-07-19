@@ -1,5 +1,9 @@
+body {
+  margin: 0;
+}
+
 .App {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }

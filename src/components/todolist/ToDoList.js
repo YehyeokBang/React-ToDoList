@@ -37,9 +37,11 @@ function ToDoList() {
     [todos]
   );
   return (
-    <div className="ToDoList">
-      <ToDoItemBox todos={todos} onRemove={onRemove} onToggle={onToggle} />
-      <ToDoInsert onInsert={onInsert} />
+    <div className="ToDoListBox">
+      <div className="ToDoList">
+        <ToDoItemBox todos={todos} onRemove={onRemove} onToggle={onToggle} />
+        <ToDoInsert onInsert={onInsert} />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,12 @@
 /* ToDoList */
 
+.ToDoListBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
 .ToDoList {
   display: inline-block;
   padding: 2rem;

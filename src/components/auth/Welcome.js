@@ -51,35 +51,45 @@ const Welcome = () => {
     }
   };
   return (
-    <div className="WelcomeContainer">
-      {signType === 0 && (
-        <>
-          <h2>Welcome</h2>
-          <div className="SelectSignTypeBox">
-            <button onClick={onPickSignType} name="signin" className="signbtn1">
-              로그인
-            </button>
-            <button onClick={onPickSignType} name="signup" className="signbtn2">
-              회원가입
-            </button>
-          </div>
-        </>
-      )}
-      {signType === 1 && (
-        <SignUp
-          onChange={onChange}
-          onSubmit={onSubmit}
-          onPickSignType={onPickSignType}
-        />
-      )}
-      {signType === 2 && (
-        <SignIn
-          onChange={onChange}
-          onSubmit={onSubmit}
-          onPickSignType={onPickSignType}
-        />
-      )}
-      {error}
+    <div className="div_flex_center">
+      <div className="WelcomeContainer">
+        {signType === 0 && (
+          <>
+            <h2>Welcome</h2>
+            <div className="SelectSignTypeBox">
+              <button
+                onClick={onPickSignType}
+                name="signin"
+                className="SignBtn1"
+              >
+                로그인
+              </button>
+              <button
+                onClick={onPickSignType}
+                name="signup"
+                className="SignBtn2"
+              >
+                회원가입
+              </button>
+            </div>
+          </>
+        )}
+        {signType === 1 && (
+          <SignUp
+            onChange={onChange}
+            onSubmit={onSubmit}
+            onPickSignType={onPickSignType}
+          />
+        )}
+        {signType === 2 && (
+          <SignIn
+            onChange={onChange}
+            onSubmit={onSubmit}
+            onPickSignType={onPickSignType}
+          />
+        )}
+        {error}
+      </div>
     </div>
   );
 };

@@ -1,3 +1,10 @@
+/* Home */
+
+.Home {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Welcome */
 
 .WelcomeContainer {
@@ -31,7 +38,7 @@ button {
   text-align: center;
 }
 
-.signbtn1 {
+.SignBtn1 {
   width: 250px;
   height: 50px;
   font-size: 18px;
@@ -40,7 +47,7 @@ button {
   cursor: pointer;
 }
 
-.signbtn2 {
+.SignBtn2 {
   width: 250px;
   height: 50px;
   font-size: 18px;
@@ -52,10 +59,6 @@ button {
 }
 
 /* Sign */
-
-input {
-  border: 0;
-}
 
 .SignInputBox {
   border: 1px solid rgb(141, 137, 137);
@@ -80,6 +83,7 @@ input {
   font-size: 18px;
   margin-top: 5px;
   padding-left: 0px;
+  border: 0;
 }
 
 .SignInput input:focus {
@@ -122,4 +126,12 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 18px;
+}
+
+/* div + @ */
+
+.div_flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
